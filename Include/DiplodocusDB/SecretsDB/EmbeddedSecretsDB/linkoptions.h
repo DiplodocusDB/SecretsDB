@@ -13,4 +13,6 @@
 #pragma comment(lib, "DiplodocusEmbeddedSecretsDB.lib")
 #endif
 
+#include <Ishiko/FileSystem/linkoptions.h>
+
 #endif

@@ -6,3 +6,4 @@
 /Tests/EmbeddedSecretsDB/Makefiles/VC15/.vs/
 /Tests/EmbeddedSecretsDB/Makefiles/VC15/x64/
 /Tests/EmbeddedSecretsDB/Makefiles/VC15/DiplodocusEmbeddedSecretsDBTests.vcxproj.user
+/Tests/EmbeddedSecretsDB/TestOutput/
