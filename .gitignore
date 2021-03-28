@@ -1,0 +1,5 @@
+/Lib/*
+!/Lib/README.md
+/EmbeddedSecretsDB/Makefiles/VC15/.vs/
+/EmbeddedSecretsDB/Makefiles/VC15/x64/
+/EmbeddedSecretsDB/Makefiles/VC15/DiplodocusEmbeddedSecretsDB.vcxproj.user
