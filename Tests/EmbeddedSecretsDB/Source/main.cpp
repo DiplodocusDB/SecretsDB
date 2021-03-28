@@ -4,6 +4,7 @@
     See https://github.com/DiplodocusDB/SecretsDB/blob/main/LICENSE.txt
 */
 
+#include "EmbeddedSecretsDBTests.h"
 #include <Ishiko/TestFramework/TestFrameworkCore.h>
 
 using namespace Ishiko::Tests;
@@ -11,6 +12,9 @@ using namespace Ishiko::Tests;
 int main(int argc, char* argv[])
 {
     TestHarness theTestHarness("DiplodocusEmbeddedSecretsDB");
+
+    TestSequence& theTests = theTestHarness.tests();
+    theTests.append<EmbeddedSecretsDBTests>();
 
     return theTestHarness.run();
 }

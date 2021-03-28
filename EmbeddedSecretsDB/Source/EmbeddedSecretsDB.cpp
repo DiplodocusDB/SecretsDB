@@ -5,3 +5,16 @@
 */
 
 #include "EmbeddedSecretsDB.h"
+
+namespace DiplodocusDB
+{
+
+EmbeddedSecretsDB::EmbeddedSecretsDB()
+{
+}
+
+void EmbeddedSecretsDB::create(const boost::filesystem::path& path, Ishiko::Error& error)
+{
+}
+
+}
