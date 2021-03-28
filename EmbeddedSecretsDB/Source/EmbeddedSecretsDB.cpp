@@ -5,15 +5,30 @@
 */
 
 #include "EmbeddedSecretsDB.h"
+#include "EmbeddedSecretsDBImpl.h"
 
 namespace DiplodocusDB
 {
 
 EmbeddedSecretsDB::EmbeddedSecretsDB()
+    : m_impl(new EmbeddedSecretsDBImpl())
 {
 }
 
+EmbeddedSecretsDB::~EmbeddedSecretsDB()
+{
+    delete m_impl;
+}
+
 void EmbeddedSecretsDB::create(const boost::filesystem::path& path, Ishiko::Error& error)
+{
+}
+
+void EmbeddedSecretsDB::open(const boost::filesystem::path& path, Ishiko::Error& error)
+{
+}
+
+void EmbeddedSecretsDB::close()
 {
 }
 

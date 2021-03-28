@@ -13,14 +13,24 @@
 namespace DiplodocusDB
 {
 
+class EmbeddedSecretsDBImpl;
+
 class EmbeddedSecretsDB
 {
 public:
     EmbeddedSecretsDB();
+    ~EmbeddedSecretsDB();
 
     void create(const boost::filesystem::path& path, Ishiko::Error& error);
+    void open(const boost::filesystem::path& path, Ishiko::Error& error);
+    void close();
+
+private:
+    EmbeddedSecretsDBImpl* m_impl;
 };
 
 }
+
+#include "linkoptions.h"
 
 #endif
