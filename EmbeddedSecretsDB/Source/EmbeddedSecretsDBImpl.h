@@ -7,11 +7,21 @@
 #ifndef _DIPLODOCUSDB_SECRETSDB_EMBEDDEDSECRETSDB_EMBEDDEDSECRETSDBIMPL_H_
 #define _DIPLODOCUSDB_SECRETSDB_EMBEDDEDSECRETSDB_EMBEDDEDSECRETSDBIMPL_H_
 
+#include <Ishiko/Errors/Error.h>
+#include <boost/filesystem/path.hpp>
+
 namespace DiplodocusDB
 {
 
 class EmbeddedSecretsDBImpl
 {
+public:
+    EmbeddedSecretsDBImpl() = default;
+    ~EmbeddedSecretsDBImpl() = default;
+
+    void create(const boost::filesystem::path& path, Ishiko::Error& error);
+    void open(const boost::filesystem::path& path, Ishiko::Error& error);
+    void close();
 };
 
 }

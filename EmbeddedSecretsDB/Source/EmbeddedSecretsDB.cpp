@@ -22,14 +22,17 @@ EmbeddedSecretsDB::~EmbeddedSecretsDB()
 
 void EmbeddedSecretsDB::create(const boost::filesystem::path& path, Ishiko::Error& error)
 {
+    m_impl->create(path, error);
 }
 
 void EmbeddedSecretsDB::open(const boost::filesystem::path& path, Ishiko::Error& error)
 {
+    m_impl->open(path, error);
 }
 
 void EmbeddedSecretsDB::close()
 {
+    m_impl->close();
 }
 
 }
